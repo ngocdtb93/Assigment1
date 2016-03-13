@@ -29,19 +29,21 @@ class DetailViewController: UIViewController {
     var movie:NSDictionary?
     let urlLow = "https://image.tmdb.org/t/p/w45"
     let urlHigh = "https://image.tmdb.org/t/p/original"
+    var timer:NSTimer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("loadHighQualityImage"), userInfo: nil, repeats: true)
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(animated: Bool) {
         self.view.showLoading()
         loadData()
         updateViewSize()
-        loadHighQualityImage()
         self.view.hideLoading()
+         //loadHighQualityImage()
     }
+
 
     func loadData(){
          if let posterPath = movie!["poster_path"] as? String {
@@ -66,13 +68,16 @@ class DetailViewController: UIViewController {
         
     }
     func loadHighQualityImage(){
+        if( movieImage.image  != nil){
         let queue = dispatch_get_global_queue(0, 0)
         dispatch_async(queue){
             let posterPath = self.movie!["poster_path"] as? String
             let posterUrl = NSURL(string: self.urlHigh + posterPath!)
             dispatch_async(dispatch_get_main_queue()){
                 self.movieImage.setImageWithURL(posterUrl!)
+                self.timer!.invalidate()
             }
+        }
         }
     }
 

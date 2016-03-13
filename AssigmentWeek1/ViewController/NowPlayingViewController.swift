@@ -78,11 +78,12 @@ class NowPlayingViewController: GeneralViewController, UITableViewDelegate, UISe
                                     
                                     self.listData = (responseDictionary["results"] as? [NSDictionary])!
                                     self.tableView.reloadData()
+                                    self.view.hideLoading()
                             }
                         }
                 });
                 task.resume()
-                self.view.hideLoading()
+                
 
             }
         }
@@ -117,6 +118,7 @@ class NowPlayingViewController: GeneralViewController, UITableViewDelegate, UISe
         
         cell.lblTitle.text =  movie["original_title"] as?String
         cell.lblContent.text = movie["overview"] as? String
+        
         let queue = dispatch_get_global_queue(0, 0)
         dispatch_async(queue){
             if let posterPath = movie["poster_path"] as? String {
@@ -125,7 +127,7 @@ class NowPlayingViewController: GeneralViewController, UITableViewDelegate, UISe
             dispatch_async(dispatch_get_main_queue()){
             
                 cell.filmImage.animation = "fadeIn"
-                cell.filmImage.duration = 0.5
+                cell.filmImage.duration = 3.0
                 cell.filmImage.animate()
                 cell.filmImage.setImageWithURL(posterUrl!)
                 }
@@ -133,11 +135,6 @@ class NowPlayingViewController: GeneralViewController, UITableViewDelegate, UISe
                 cell.filmImage.image = nil
             }
         }
-        
-        //set background if selected
-        let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor(red: 237.0/255, green: 85.0/255, blue: 80/255, alpha: 1.0)
-        cell.selectedBackgroundView = bgColorView
         
         
         return cell
