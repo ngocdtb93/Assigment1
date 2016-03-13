@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		244E77E0414927B28C4F8225 /* Pods_AssigmentWeek1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssigmentWeek1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6FB3005FAA12384455B906E /* Pods-AssigmentWeek1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssigmentWeek1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AssigmentWeek1/Pods-AssigmentWeek1.debug.xcconfig"; sourceTree = "<group>"; };
-		D8067F551C93AE3700F5E73D /* AssigmentWeek1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssigmentWeek1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8067F551C93AE3700F5E73D /* AssignmentWeek1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssignmentWeek1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8067F581C93AE3700F5E73D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8067F5D1C93AE3700F5E73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8067F5F1C93AE3700F5E73D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		D8067F4C1C93AE3700F5E73D = {
 			isa = PBXGroup;
 			children = (
-				D8067F571C93AE3700F5E73D /* AssigmentWeek1 */,
+				D8067F571C93AE3700F5E73D /* AssignmentWeek1 */,
 				D8067F561C93AE3700F5E73D /* Products */,
 				B4F3F5C0E30AB36C0C2B0932 /* Pods */,
 				DCE3DF9A012A45D44A45DC69 /* Frameworks */,
@@ -74,12 +74,12 @@
 		D8067F561C93AE3700F5E73D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8067F551C93AE3700F5E73D /* AssigmentWeek1.app */,
+				D8067F551C93AE3700F5E73D /* AssignmentWeek1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D8067F571C93AE3700F5E73D /* AssigmentWeek1 */ = {
+		D8067F571C93AE3700F5E73D /* AssignmentWeek1 */ = {
 			isa = PBXGroup;
 			children = (
 				D8067F6A1C93D63C00F5E73D /* Model */,
@@ -90,6 +90,7 @@
 				D8067F611C93AE3700F5E73D /* LaunchScreen.storyboard */,
 				D8067F641C93AE3700F5E73D /* Info.plist */,
 			);
+			name = AssignmentWeek1;
 			path = AssigmentWeek1;
 			sourceTree = "<group>";
 		};
@@ -125,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D8067F541C93AE3700F5E73D /* AssigmentWeek1 */ = {
+		D8067F541C93AE3700F5E73D /* AssignmentWeek1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8067F671C93AE3700F5E73D /* Build configuration list for PBXNativeTarget "AssigmentWeek1" */;
+			buildConfigurationList = D8067F671C93AE3700F5E73D /* Build configuration list for PBXNativeTarget "AssignmentWeek1" */;
 			buildPhases = (
 				E4B30A9AFC41ED6C02C70372 /* Check Pods Manifest.lock */,
 				D8067F511C93AE3700F5E73D /* Sources */,
@@ -140,9 +141,9 @@
 			);
 			dependencies = (
 			);
-			name = AssigmentWeek1;
+			name = AssignmentWeek1;
 			productName = AssigmentWeek1;
-			productReference = D8067F551C93AE3700F5E73D /* AssigmentWeek1.app */;
+			productReference = D8067F551C93AE3700F5E73D /* AssignmentWeek1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -160,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D8067F501C93AE3700F5E73D /* Build configuration list for PBXProject "AssigmentWeek1" */;
+			buildConfigurationList = D8067F501C93AE3700F5E73D /* Build configuration list for PBXProject "AssignmentWeek1" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -173,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D8067F541C93AE3700F5E73D /* AssigmentWeek1 */,
+				D8067F541C93AE3700F5E73D /* AssignmentWeek1 */,
 			);
 		};
 /* End PBXProject section */
@@ -368,8 +369,8 @@
 				INFOPLIST_FILE = AssigmentWeek1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appable.AssigmentWeek1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appable.AssignmentWeek1;
+				PRODUCT_NAME = AssignmentWeek1;
 			};
 			name = Debug;
 		};
@@ -381,15 +382,15 @@
 				INFOPLIST_FILE = AssigmentWeek1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.appable.AssigmentWeek1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appable.AssignmentWeek1;
+				PRODUCT_NAME = AssignmentWeek1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D8067F501C93AE3700F5E73D /* Build configuration list for PBXProject "AssigmentWeek1" */ = {
+		D8067F501C93AE3700F5E73D /* Build configuration list for PBXProject "AssignmentWeek1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8067F651C93AE3700F5E73D /* Debug */,
@@ -398,7 +399,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8067F671C93AE3700F5E73D /* Build configuration list for PBXNativeTarget "AssigmentWeek1" */ = {
+		D8067F671C93AE3700F5E73D /* Build configuration list for PBXNativeTarget "AssignmentWeek1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D8067F681C93AE3700F5E73D /* Debug */,
