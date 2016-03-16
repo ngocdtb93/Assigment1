@@ -17,6 +17,7 @@
 		D8067F751C9429A400F5E73D /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8067F741C9429A400F5E73D /* General.swift */; };
 		D8067F771C942C2600F5E73D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8067F761C942C2600F5E73D /* Constant.swift */; };
 		D8067F791C943DEF00F5E73D /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8067F781C943DEF00F5E73D /* GeneralViewController.swift */; };
+		D87D39351C99C06F000F573B /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87D39341C99C06F000F573B /* Movie.swift */; };
 		D88AA5191C94FD22008F62E8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88AA5181C94FD22008F62E8 /* DetailViewController.swift */; };
 		FE890C028FBF23828390FA1C /* Pods_AssigmentWeek1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244E77E0414927B28C4F8225 /* Pods_AssigmentWeek1.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		D8067F741C9429A400F5E73D /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 		D8067F761C942C2600F5E73D /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		D8067F781C943DEF00F5E73D /* GeneralViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
+		D87D39341C99C06F000F573B /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D88AA5181C94FD22008F62E8 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F5DF9E4F422A46D73CC9AD36 /* Pods-AssigmentWeek1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssigmentWeek1.release.xcconfig"; path = "Pods/Target Support Files/Pods-AssigmentWeek1/Pods-AssigmentWeek1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				D8067F781C943DEF00F5E73D /* GeneralViewController.swift */,
 				D8067F741C9429A400F5E73D /* General.swift */,
 				D8067F761C942C2600F5E73D /* Constant.swift */,
+				D87D39341C99C06F000F573B /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				D8067F791C943DEF00F5E73D /* GeneralViewController.swift in Sources */,
 				D8067F591C93AE3700F5E73D /* AppDelegate.swift in Sources */,
 				D8067F711C93D71000F5E73D /* NowPlayingViewController.swift in Sources */,
+				D87D39351C99C06F000F573B /* Movie.swift in Sources */,
 				D8067F6F1C93D67700F5E73D /* TableViewCell.swift in Sources */,
 				D8067F751C9429A400F5E73D /* General.swift in Sources */,
 				D8067F771C942C2600F5E73D /* Constant.swift in Sources */,

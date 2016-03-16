@@ -26,9 +26,8 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var heightOfContentView: NSLayoutConstraint!
     
-    var movie:NSDictionary?
-    let urlLow = "https://image.tmdb.org/t/p/w45"
-    let urlHigh = "https://image.tmdb.org/t/p/original"
+    var movie:Movie?
+
     var timer:NSTimer?
     
     override func viewDidLoad() {
@@ -46,33 +45,33 @@ class DetailViewController: UIViewController {
 
 
     func loadData(){
-         if let posterPath = movie!["poster_path"] as? String {
+         if let posterPath = movie?.urlImage {
             let posterUrl = NSURL(string: urlLow + posterPath)
             movieImage.setImageWithURL(posterUrl!)
             //low high quality image
         }
         
-        lblName.text =  movie!["original_title"] as?String
-        lblReleaseDate.text = movie!["release_date"] as? String
-        lblVote.text = "\(movie!["vote_count"] as! Int)"
-        lblOverview.text = movie!["overview"] as? String
+        lblName.text =  movie?.title
+        lblReleaseDate.text = movie?.releaseDate
+        lblVote.text = "\((movie?.voteCout)!)"
+        lblOverview.text = movie?.overview
     }
     func updateViewSize(){
         heightOfViewDetail.constant = calculateHeightDetailView()
     }
     
     func calculateHeightDetailView()->CGFloat{
-        let hieghtName = General.heightForLabel( (movie!["original_title"] as?String)!, font: UIFont(name: "Helvetica-Bold", size: 18)!, width: width - 32)
-        let hieghtOverview = General.heightForLabel( (movie!["overview"] as?String)!, font: UIFont(name: "Helvetica", size: 14)!, width: width - 32)
-        return hieghtName + hieghtOverview + 70
+        let heightName = General.heightForLabel((movie?.title)!, font: UIFont(name: "Helvetica-Bold", size: 18)!, width: width - 32)
+        let heightOverview = General.heightForLabel((movie?.overview)!, font: UIFont(name: "Helvetica", size: 14)!, width: width - 32)
+        return heightName + heightOverview + 70
         
     }
     func loadHighQualityImage(){
         if( movieImage.image  != nil){
         let queue = dispatch_get_global_queue(0, 0)
         dispatch_async(queue){
-            let posterPath = self.movie!["poster_path"] as? String
-            let posterUrl = NSURL(string: self.urlHigh + posterPath!)
+            let posterPath = self.movie?.urlImage
+            let posterUrl = NSURL(string: urlHigh + posterPath!)
             dispatch_async(dispatch_get_main_queue()){
                 self.movieImage.setImageWithURL(posterUrl!)
                 self.timer!.invalidate()

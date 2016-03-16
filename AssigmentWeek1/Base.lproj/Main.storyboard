@@ -9,7 +9,7 @@
         <!--Now Showing-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="NowPlayingViewController" customModule="AssigmentWeek1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NowPlayingViewController" customModule="AssignmentWeek1" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -67,7 +67,7 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="122" id="9sT-eZ-Llf" customClass="TableViewCell" customModule="AssigmentWeek1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="122" id="9sT-eZ-Llf" customClass="TableViewCell" customModule="AssignmentWeek1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="320" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9sT-eZ-Llf" id="g4w-Yy-wCb">
@@ -206,7 +206,7 @@
         <!--Top Rate-->
         <scene sceneID="doM-z6-asC">
             <objects>
-                <viewController id="3RQ-9B-JI2" customClass="TopRateViewController" customModule="AssigmentWeek1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3RQ-9B-JI2" customClass="TopRateViewController" customModule="AssignmentWeek1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jog-s7-rRE"/>
                         <viewControllerLayoutGuide type="bottom" id="1he-wb-wA2"/>
@@ -228,7 +228,7 @@
                                     </connections>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="122" id="Vfp-De-Wtb" customClass="TableViewCell" customModule="AssigmentWeek1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="122" id="Vfp-De-Wtb" customClass="TableViewCell" customModule="AssignmentWeek1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="320" height="122"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vfp-De-Wtb" id="2wt-Je-kua">
@@ -402,7 +402,7 @@
         <!--Detail View Controller-->
         <scene sceneID="nsQ-rG-hjy">
             <objects>
-                <viewController id="YR2-7E-ETi" customClass="DetailViewController" customModule="AssigmentWeek1" sceneMemberID="viewController">
+                <viewController id="YR2-7E-ETi" customClass="DetailViewController" customModule="AssignmentWeek1" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X8f-8T-opM"/>
                         <viewControllerLayoutGuide type="bottom" id="BdJ-2S-ZAu"/>
