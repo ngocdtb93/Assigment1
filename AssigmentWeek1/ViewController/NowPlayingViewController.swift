@@ -81,7 +81,7 @@ class NowPlayingViewController: GeneralViewController {
     }
     
     //MARK: - prepare for segue
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func A {
         let vc = segue.destinationViewController as! DetailViewController
         let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)
         if(searchActive){

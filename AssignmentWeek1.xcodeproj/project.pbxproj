@@ -370,9 +370,10 @@
 			baseConfigurationReference = B6FB3005FAA12384455B906E /* Pods-AssigmentWeek1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AssigmentWeek1/Info.plist;
+				INFOPLIST_FILE = AssignmentWeek1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PODS_ROOT = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appable.AssignmentWeek1;
 				PRODUCT_NAME = AssignmentWeek1;
 			};
@@ -383,9 +384,10 @@
 			baseConfigurationReference = F5DF9E4F422A46D73CC9AD36 /* Pods-AssigmentWeek1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = AssigmentWeek1/Info.plist;
+				INFOPLIST_FILE = AssignmentWeek1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PODS_ROOT = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appable.AssignmentWeek1;
 				PRODUCT_NAME = AssignmentWeek1;
 			};
