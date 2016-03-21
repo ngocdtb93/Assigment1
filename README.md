@@ -28,6 +28,7 @@ The following **additional** features are implemented:
 
 - [x] List anything else that you can get done to improve the app functionality!
 - some animation for app
+- use autolayout
 
 ## Video Walkthrough
 
